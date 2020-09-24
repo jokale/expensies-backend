@@ -6,6 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-User.create(username: 'Joanna', email: 'joanna@gmail.com', password_digest: 'password')
+User.create(email: 'joanna@gmail.com', password_digest: 'password')
 
 expense_1 = Expense.create([title: 'Burgers with Hannah', date: Date.today, details: 'Went to Burger and Lobster and had a burger meal with a glass of fanta', amount: '26', user_id: 1 ])
