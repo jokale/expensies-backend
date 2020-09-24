@@ -8,4 +8,9 @@
 
 User.create(username: 'Joanna', email: 'joanna@gmail.com', password_digest: 'password')
 
-expense_1 = Threadd.create([username: 'Joanna', date: Date.today, thread_title: 'The best track and field athlete of all time!', thread_body: 'I personally feel like the greatest track and field is Usain Bolt! What a legend!', user_id: 1 ])
+expense_1 = Expense.create([username: 'Joanna', date: Date.today, thread_title: 'The best track and field athlete of all time!', thread_body: 'I personally feel like the greatest track and field is Usain Bolt! What a legend!', user_id: 1 ])
+
+t.string :title
+t.datetime :date
+t.text :details
+t.integer :amount
