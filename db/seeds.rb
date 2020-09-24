@@ -8,9 +8,4 @@
 
 User.create(username: 'Joanna', email: 'joanna@gmail.com', password_digest: 'password')
 
-expense_1 = Expense.create([username: 'Joanna', date: Date.today, thread_title: 'The best track and field athlete of all time!', thread_body: 'I personally feel like the greatest track and field is Usain Bolt! What a legend!', user_id: 1 ])
-
-t.string :title
-t.datetime :date
-t.text :details
-t.integer :amount
+expense_1 = Expense.create([title: 'Burgers with Hannah', date: Date.today, details: 'Went to Burger and Lobster and had a burger meal with a glass of fanta', amount: '26', user_id: 1 ])
